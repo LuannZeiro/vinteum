@@ -1,6 +1,5 @@
 package com.example;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,13 +7,13 @@ public class Jogador {
     private int pontos = 0;
     private List<Carta> cartas = new ArrayList<>();
     private boolean parou = false;
-    
+
     public void receberCarta(Carta carta) {
         cartas.add(carta);
         pontos += carta.getNumero();
     }
 
-    public void parar(){
+    public void parar() {
         parou = true;
     }
 
@@ -26,8 +25,8 @@ public class Jogador {
         return cartas;
     }
 
-    public boolean isParou() {
+    public boolean parou() {
         return parou;
     }
-        
+
 }
